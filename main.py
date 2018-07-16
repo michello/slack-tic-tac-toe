@@ -119,7 +119,7 @@ def gettingResponse():
 		        }
 		    ]
 			)
-		
+
 	elif command[0] == "turn":
 		return jsonify(
 			response_type='in_channel',
@@ -148,6 +148,7 @@ def gettingResponse():
 			        }
 			    ]
 				)
+	
 	else:
 		return jsonify(
 			response_type='in_channel',
@@ -160,17 +161,7 @@ def gettingResponse():
 	    ]
 		)
 
-
 	return;
-		
-
-"""
-@app.route('/make-move', methods=['GET'])
-def makingGameMove():
-	if not valid_request(request):
-		abort(400)
-"""
-	
 
 if __name__ == "__main__":
 	app.run('localhost', 80)

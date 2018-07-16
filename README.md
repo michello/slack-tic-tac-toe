@@ -22,7 +22,9 @@ https://slacktictactoe.slack.com
 ## screenshots:
 
 ## how to run
-to run listening socket: `ngrok.exe http 80`
+1. Run listening socket via ngrok: `ngrok.exe http 80`
+2. Get the forwarding URL and append `/command` and apply in Slack API
+4. Run `python main.py`
 
 ## tutorials & code examples used:
 - https://github.com/slackapi/python-dialog-example/blob/master/example.py
