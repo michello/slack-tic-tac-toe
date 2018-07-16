@@ -10,7 +10,7 @@ https://slacktictactoe.slack.com
 - https://api.slack.com/tutorials/your-first-slash-command
 
 ## currently:
-- [ ] fix display game board command
+- [x] fix display game board command (`/ttt display`)
 - [ ] A channel can have at most one game being played at a time.
 - [x] Users can create a new game in any Slack channel by challenging another user (using their @username).
 - [ ] Anyone in the channel can run a command to display the current board and list whose turn it is.

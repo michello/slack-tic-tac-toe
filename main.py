@@ -105,22 +105,21 @@ def gettingResponse():
 
 	elif command[0] == "display":
 		if (aGame.ongoing):
-			text = "The game currently: \n" + aGame.display_board()
+			text = "The game currently: \n" + aGame.display_board() + "\n It's "+ aGame.turn +"'s to make a move!"
 		else:
 			text = "There is currently no ongoing game!"
-			
+
 		return jsonify(
 				response_type='in_channel',
 				attachments=[
 		        {
-	            "text": "The game currently: \n" + aGame.display_board(),
+	            "text": text,
 	            "color": "#3AA3E3",
 	            "attachment_type": "default"
 		        }
 		    ]
 			)
-
-
+		
 	elif command[0] == "turn":
 		return jsonify(
 			response_type='in_channel',
