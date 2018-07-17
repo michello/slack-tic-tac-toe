@@ -71,10 +71,10 @@ def gettingResponse():
 		return create_message("It's " + channels[channel]["turn"] + "'s to make a move!")
 	elif command[0] == "help":
 		possible_commands = "Here are the possible commands you can make with this `/ttt` slash command:\n" \
-												"`/ttt turn`: allows you to see which player's turn it is\n" \
-												"`/ttt make_move NUMBER`: allows you to make a move on space NUMBER on the board\n" \
-												"`/ttt challenge @user`: allows you to start a game with someone in your workplace\n" \
-												"`/ttt display`: allows you to view the board of a game if it's ongoing"
+			"`/ttt turn`: allows you to see which player's turn it is\n" \
+			"`/ttt make_move NUMBER`: allows you to make a move on space NUMBER on the board\n" \
+			"`/ttt challenge @user`: allows you to start a game with someone in your workplace\n" \
+			"`/ttt display`: allows you to view the board of a game if it's ongoing"
 		return create_message(possible_commands)
 	else:
 		return create_message("You typed in an invalid command! Do you need help? Type `/ttt help` for a list of possible commands")
