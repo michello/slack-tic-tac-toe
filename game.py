@@ -2,22 +2,22 @@ from tracker import *
 
 # a dictionary of the combos 
 winning_combos = {0: [[1, 2], [3, 6], [4, 8]],
-					1: [[0, 2], [4, 7]],
-					2: [[0, 1], [5, 8]],
-					3: [[4, 5], [0, 6]],
-					4: [[0, 8], [2, 6], [1, 7], [3, 5]],
-					5: [[2, 8], [3, 4]],
-					6: [[0, 3],[7, 8], [2, 4]],
-					7: [[6, 8], [1, 4]],
-					8: [[6, 7], [2, 5], [0, 4]]}
+	1: [[0, 2], [4, 7]],
+	2: [[0, 1], [5, 8]],
+	3: [[4, 5], [0, 6]],
+	4: [[0, 8], [2, 6], [1, 7], [3, 5]],
+	5: [[2, 8], [3, 4]],
+	6: [[0, 3],[7, 8], [2, 4]],
+	7: [[6, 8], [1, 4]],
+	8: [[6, 7], [2, 5], [0, 4]]}
 
 # function to display the board properly
 def display_board(board):
 	return(board[0]+"|" + board[1] + "|" + board[2] +
-			"\n–––––––––\n" +
-			board[3] +"|" + board[4] + "|" + board[5] +
-			"\n–––––––––\n" +
-			board[6]+"|" + board[7] + "|" + board[8])
+		"\n–––––––––\n" +
+		board[3] +"|" + board[4] + "|" + board[5] +
+		"\n–––––––––\n" +
+		board[6]+"|" + board[7] + "|" + board[8])
 
 # checks if the board is full
 def is_board_full(board):
@@ -33,7 +33,6 @@ def check_valid_move(channel, move):
 
 # checks for what the outcome will be after a player has made a move
 def check_for_final_outcome(place, channel):
-	
 	board = channels[channel]['board']
 	rows_to_check = winning_combos[place]
 	# iterating through the combos to check if a combo has been fulfilled
@@ -52,7 +51,6 @@ def check_for_final_outcome(place, channel):
 		channels[channel]['winner'] = "Draw"
 		channels[channel]['ongoing'] = False
 		return(channels[channel]['winner'])
-
 	# the game continues if the board isn't full and if there is no winner
 	return("")
 

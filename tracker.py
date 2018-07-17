@@ -39,5 +39,3 @@ def allowed_to_make_move(channel, player):
 	# makes sure the user is one of the players in this particular game
 	# AND it's the user's turn to make a move
 	return (player in channels[channel]['players'] and channels[channel]['turn'] == player)
-
-
