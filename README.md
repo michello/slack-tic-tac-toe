@@ -5,10 +5,10 @@ a tic tac toe game via slack!
 https://slacktictactoe.slack.com
 
 ## possible slack commands:
-`/ttt turn`: allows you to see which player's turn it is
-`/ttt make_move NUMBER`: allows you to make a move on space NUMBER on the board
-`/ttt challenge @user`: allows you to start a game with someone in your workplace
-`/ttt display`: allows you to view the board of a game if it's ongoing
+- `/ttt turn`: allows you to see which player's turn it is
+- `/ttt make_move NUMBER`: allows you to make a move on space NUMBER on the board
+- `/ttt challenge @user`: allows you to start a game with someone in your workplace
+- `/ttt display`: allows you to view the board of a game if it's ongoing
 
 ## pains, issues, and thoughts
 - One of the earlier issues I had that made my progress to 1.5 days long is figuring out how to send messages. I was following <a href="https://renzo.lucioni.xyz/serverless-slash-commands-with-python/">Renzo Lucioni's</a> tutorial at first and couldn't figure out my issue until I realized my Flask application wasn't listening on the same port as `ngrok`. I also tried to incorporate <a href="https://api.slack.com/docs/message-buttons">interactive message buttons</a> into my tic tac toe board but forgo the idea once I discovered the buttons added a layer of complexity I currently didn't have the time for.
