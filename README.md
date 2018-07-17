@@ -86,4 +86,4 @@ https://slacktictactoe.slack.com
 - https://renzo.lucioni.xyz/serverless-slash-commands-with-python/
 
 ## time spent
-≥1.5 days
+≤1.5 days
