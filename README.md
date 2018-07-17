@@ -52,20 +52,28 @@ https://slacktictactoe.slack.com
 	```
 
 ## screenshots:
+
 ### challenging someone
 <img src="https://i.gyazo.com/8fd865fb5d31ed170141df4213085760.png" width="400">
+
 ### making a move
 <img src="https://i.gyazo.com/b1d837fc16d4adc092f921884fbb311b.png" width="400">
+
 ### when someone wins
 <img src="https://i.gyazo.com/ce1839f43fff741f87862e5a0e80ff0d.png" width="400">
+
 ### when someone tries to join a game they're not a part of
 <img src="https://i.gyazo.com/b15435b4f7b3965ca1607b178cb4d3f5.png" width="400">
+
 ### when someone makes a move when it's not their turn
 <img src="https://i.gyazo.com/3169582160ff08a7d2561c66ed2838ec.png" width="400">
+
 ### when someone wants to display the board and there is no ongoing game
 <img src="https://i.gyazo.com/54cc45a79b01ac342d8d0c7598111ede.png" width="400">
+
 ### when someone wants to display the board and there is an ongoing game
 <img src="https://i.gyazo.com/4aa455f165fd4558ef4608cf09ff86e3.png" width="400">
+
 ### when the game ends in a draw
 <img src="https://i.gyazo.com/17ef4d0ad8b5f8cc3efbe31d48cd9bac.png" width="400">
 
@@ -74,8 +82,7 @@ https://slacktictactoe.slack.com
 2. Get the forwarding URL and append `/command` and apply in Slack API
 4. Run `python main.py`
 
-## tutorials & code examples used:
-- https://github.com/slackapi/python-dialog-example/blob/master/example.py
+## tutorial used:
 - https://renzo.lucioni.xyz/serverless-slash-commands-with-python/
 
 ## time spent
